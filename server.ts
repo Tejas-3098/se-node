@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 import mongoose from "mongoose";
-mongoose.connect('mongodb+srv://tejas:<mongodb123>@cluster0.1qcrc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb://localhost:27017');
 const app = express();
 
 app.get('/hello', (req: Request, res: Response) =>
